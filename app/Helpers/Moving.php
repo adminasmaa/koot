@@ -27,7 +27,7 @@ class Moving
 
     public static function upload($request, $folder, $image)
     {
-       
+
         if ($request->hasFile($image)) {
          //   dd(Storage::disk('public')->put($folder, $request->File($image)));
             return Storage::disk('public')->put($folder, $request->File($image));
