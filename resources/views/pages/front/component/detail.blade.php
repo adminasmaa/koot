@@ -5,7 +5,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>فرع &nbsp; <?php echo $sub->name; ?>&#13; </title>
+    <title>فرع &nbsp; <?php echo $sub->name ?? ''; ?>&#13; </title>
     <!-- Cairo Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -228,7 +228,7 @@
 
                                 <div class="social-items d-flex my-md-5 my-3">
 
-                                    <a href="tel:<?= $sub->call_phone ?>" onclick="count_calls();"
+                                    <a href="tel:<?= $sub->iphone_application ?>" onclick="count_calls();"
                                        oncontextmenu="count_calls();"
                                        class="d-flex justify-content-center align-items-center w-50 border-left py-2 link-bottom">
                                     <span>
@@ -237,7 +237,7 @@
                                         <span class="h2 send-msg">تطبيق ايفون</span>
                                     </a>
 
-                                    <a href="tel:<?= $sub->call_phone ?>" onclick="count_whats();"
+                                    <a href="tel:<?= $sub->galaxy_application ?>" onclick="count_whats();"
                                        oncontextmenu="count_whats();"
                                        class="d-flex justify-content-center align-items-center w-50 py-2 border-left link-bottom">
                                     <span>
@@ -246,7 +246,7 @@
                                     </span>
                                         <span class="h2 send-msg"> تطبيق جلكسي</span>
                                     </a>
-                                    <a href="<?= $sub->agz_num ?>" onclick="count_insta();" style="text-align: center"
+                                    <a href="<?= $sub->menu ?>" onclick="count_insta();" style="text-align: center"
                                        oncontextmenu="count_insta();"
                                        class="d-flex justify-content-center align-items-center  border-left w-50 py-2">
                                     <span>

@@ -41,6 +41,13 @@ class SubscriptionsRepository implements SubscriptionsRepositoryInterface
          $data['description'] = $request->description;
          $data['details'] = $request->details;
          $data['location'] = $request->location;
+
+         $data['iphone_application'] = $request->iphone_application;
+
+         $data['galaxy_application'] = $request->galaxy_application;
+         $data['menu'] = $request->menu;
+
+
          $data['link_insta'] = $request->link_insta;
          $data['area'] = $request->area;
         Subscriptions::create($data);
@@ -67,6 +74,10 @@ class SubscriptionsRepository implements SubscriptionsRepositoryInterface
         $data['agz_num'] = $request->agz_num;
         $data['description'] = $request->description;
         $data['details'] = $request->details;
+        $data['iphone_application'] = $request->iphone_application;
+
+        $data['galaxy_application'] = $request->galaxy_application;
+        $data['menu'] = $request->menu;
         $data['link_insta'] = $request->link_insta;
         $data['area'] = $request->area;
         $subscription->update($data);

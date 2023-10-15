@@ -19,6 +19,9 @@ return new class extends Migration
             $table->string('place')->nullable();
             $table->string('sub_name')->nullable();
             $table->string('c_id')->nullable();
+            $table->string('iphone_application')->nullable();
+            $table->string('galaxy_application')->nullable();
+            $table->string('menu')->nullable();
             $table->text('description')->nullable();
             $table->timestamps();
         });

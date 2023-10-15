@@ -14,7 +14,7 @@
                       <h5>تعديل وحدة  </h5>
                   </div>
                   <div class="card-body">
-                    <div class="row">       
+                    <div class="row">
 
                       <div class="col-sm-6">
                         <div class="media-body">
@@ -35,7 +35,7 @@
                             <label class="col-sm-12 col-form-label">  المنطقة </label>
                             <div class="col-sm-9">
                               <input class="form-control" name="area" value="{{$subscription->area}}">
-                             
+
                             </div>
                           </div>
                         </div>
@@ -49,7 +49,7 @@
                               @error('call_phone')
                                           <div style='color:red'>{{$message}}</div>
                                @enderror
-                              
+
                             </div>
                           </div>
                         </div>
@@ -63,7 +63,7 @@
                               @error('msg_phone')
                                           <div style='color:red'>{{$message}}</div>
                                @enderror
-                              
+
                             </div>
                           </div>
                         </div>
@@ -77,7 +77,7 @@
                               @error('agz_num')
                                           <div style='color:red'>{{$message}}</div>
                                @enderror
-                              
+
                             </div>
                           </div>
                         </div>
@@ -89,11 +89,63 @@
                             <label class="col-sm-12 col-form-label"> لينك انستجرام  </label>
                             <div class="col-sm-9">
                               <input class="form-control" name="link_insta" value="{{$subscription->description}}">
-                           
+
                             </div>
                           </div>
                         </div>
                       </div>
+
+
+                      <div class="col-sm-6">
+                        <div class="media-body">
+                          <div class="mb-3 row">
+                            <label class="col-sm-12 col-form-label">  منيو  </label>
+                            <div class="col-sm-9">
+                              <input class="form-control" name="menu" value="{{$subscription->menu}}">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+                      <div class="col-sm-6">
+                        <div class="media-body">
+                          <div class="mb-3 row">
+                            <label class="col-sm-12 col-form-label">   تطبيق جلكسي   </label>
+                            <div class="col-sm-9">
+                              <input class="form-control" name="galaxy_application" value="{{$subscription->galaxy_application}}">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+                      <div class="col-sm-6">
+                        <div class="media-body">
+                          <div class="mb-3 row">
+                            <label class="col-sm-12 col-form-label">    تطبيق ايفون   </label>
+                            <div class="col-sm-9">
+                              <input class="form-control" name="iphone_application" value="{{$subscription->iphone_application}}">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
 
                       <div class="col-sm-6">
                         <div class="media-body">
@@ -102,7 +154,7 @@
                                 <div class="col-sm-9">
                                     <input type="file" name='img' class="form-control"
                                            placeholder="">
-                                  
+
                                 </div>
                                 @if($subscription->img)
                                 <a href="{{asset('storage/'.$subscription->img)}}" class="col-sm-3"><img style="width:70px;height:70px;"
@@ -149,9 +201,9 @@
                 <div class="col-md-12">
                   <div class="card-footer text-center">
                             <button class="btn btn-primary m-r-15" type="submit">تعديل</button>
-                            <a href="{{route('subscriptions.index')}}"> <button type="button" class="btn btn-light">إلغاء</button></a> 
+                            <a href="{{route('subscriptions.index')}}"> <button type="button" class="btn btn-light">إلغاء</button></a>
                         </div>
-                </div> 
+                </div>
               </div>
            </div>
 

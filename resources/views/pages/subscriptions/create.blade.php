@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid">
           <div class="row">
-            
+
           <form class="mega-vertical" action="{{route('subscriptions.store')}}" method="post"
                   enctype="multipart/form-data">
                 @csrf
@@ -13,7 +13,7 @@
                       <h5>إضافة وحدة جديدة </h5>
                   </div>
                   <div class="card-body">
-                    <div class="row">       
+                    <div class="row">
                       <div class="col-sm-6">
                         <div class="media-body">
                           <div class="mb-3 row">
@@ -33,7 +33,7 @@
                             <label class="col-sm-12 col-form-label">  المنطقة </label>
                             <div class="col-sm-9">
                               <input class="form-control" name="area" value="{{old('area')}}">
-                             
+
                             </div>
                           </div>
                         </div>
@@ -47,7 +47,7 @@
                               @error('call_phone')
                                           <div style='color:red'>{{$message}}</div>
                                @enderror
-                              
+
                             </div>
                           </div>
                         </div>
@@ -61,7 +61,7 @@
                               @error('msg_phone')
                                           <div style='color:red'>{{$message}}</div>
                                @enderror
-                              
+
                             </div>
                           </div>
                         </div>
@@ -75,7 +75,7 @@
                               @error('agz_num')
                                           <div style='color:red'>{{$message}}</div>
                                @enderror
-                              
+
                             </div>
                           </div>
                         </div>
@@ -87,11 +87,55 @@
                             <label class="col-sm-12 col-form-label"> لينك انستجرام  </label>
                             <div class="col-sm-9">
                               <input class="form-control" name="link_insta" value="{{old('link_insta')}}">
-                           
+
                             </div>
                           </div>
                         </div>
                       </div>
+
+
+                      <div class="col-sm-6">
+                        <div class="media-body">
+                          <div class="mb-3 row">
+                            <label class="col-sm-12 col-form-label">  منيو  </label>
+                            <div class="col-sm-9">
+                              <input class="form-control" name="menu" value="{{old('menu')}}">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-sm-6">
+                        <div class="media-body">
+                          <div class="mb-3 row">
+                            <label class="col-sm-12 col-form-label">   تطبيق جلكسي  </label>
+                            <div class="col-sm-9">
+                              <input class="form-control" name="galaxy_application" value="{{old('galaxy_application')}}">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-sm-6">
+                        <div class="media-body">
+                          <div class="mb-3 row">
+                            <label class="col-sm-12 col-form-label">    تطبيق ايفون  </label>
+                            <div class="col-sm-9">
+                              <input class="form-control" name="iphone_application" value="{{old('iphone_application')}}">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
 
                       <div class="col-sm-6">
                         <div class="media-body">
@@ -138,16 +182,16 @@
                           </div>
                         </div>
                       </div>
-                      
+
                   </div>
 
                 </div>
                 <div class="col-md-12">
                   <div class="card-footer text-center">
                           <button class="btn btn-primary m-r-15" type="submit">حفظ</button>
-                          <a href="{{route('subscriptions.index')}}"> <button type="button" class="btn btn-light">إلغاء</button></a> 
+                          <a href="{{route('subscriptions.index')}}"> <button type="button" class="btn btn-light">إلغاء</button></a>
                         </div>
-                </div> 
+                </div>
               </div>
            </div>
 
