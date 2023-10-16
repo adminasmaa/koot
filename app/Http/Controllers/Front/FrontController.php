@@ -135,9 +135,9 @@ class FrontController extends Controller
         } else {
             $sql = "INSERT INTO ads (count_visit,type_id ) VALUES (1,'$type')";
 
-            if ($conn->query($sql) === true) {
-                $conn->close();
-            }
+//            if ($conn->query($sql) === true) {
+//                $conn->close();
+//            }
         }
     }
     public function whats(Request $request)

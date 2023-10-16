@@ -88,7 +88,7 @@
                           <div class="mb-3 row">
                             <label class="col-sm-12 col-form-label"> لينك انستجرام  </label>
                             <div class="col-sm-9">
-                              <input class="form-control" name="link_insta" value="{{$subscription->description}}">
+                              <input class="form-control" name="link_insta" value="{{$subscription->link_insta}}">
 
                             </div>
                           </div>
